@@ -83,12 +83,12 @@
                     <input type="text" placeholder="Marca" class="form-control" name="marca" value="<?php echo $row['marca']; ?>" >
                     <br>
                     
-                    <Input type="number" placeholder="Precio" class="form-control" name="precio" value="<?php echo $row['precio']; ?>"></Input>
+                    <input type="number" placeholder="Precio" class="form-control" name="precio" value="<?php echo $row['precio']; ?>">
                     <br>
-                    <textarea class="form-control"  placeholder="Descripcion"  name="descripcion" ></textarea>
+                    <textarea class="form-control"  placeholder="Descripcion"  name="descripcion" value="<?php echo $row['descripcion']; ?>"></textarea>
                     <br>
                     <label class="font-weight-bond">FOTO:</label>
-                    <input type="text" placeholder="Foto URL" class="form-control" name="foto" required>
+                    <input type="text" placeholder="Foto URL" class="form-control" name="foto" required value="<?php echo $row['foto']; ?>">
               
                 </div>
                 <input type="submit" class="btn btn-info btn-lg btn-block" value="Guardar Cambios" name="register">  

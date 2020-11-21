@@ -8,6 +8,7 @@ if (isset($_POST['register'])) {
 		$descripcion = trim($_POST['descripcion']);
 		$foto = $_POST['foto'];
 		//$foto = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
+	
 			
 			
 
@@ -17,6 +18,7 @@ if (isset($_POST['register'])) {
 	    	?> 
 	    	<h3 class="text-center">¡Se ha registrado correctamente!</h3>
            <?php
+		   header("location:AdminLaTiendita.php");
 	    } else {
 	    	?> 
 	    	<h3 class="text-center">¡Ups ha ocurrido un error!</h3>

@@ -64,13 +64,12 @@ if ($inc) {
     
             <div class="col mb-4">
                 <div class="card">
-                   <img src="img/comida.jpg" class="card-img-top" alt="Imagen">
+                <img src="<?php echo ($row["foto"]); ?>" class="card-img-top" alt="Imagen" width="100" heigth="1000">
                     <div class="card-body">
                             <h5 class="card-title"><?php echo $nombre; ?></h5>
                             <p class="card-text">$<?php echo $precio; ?></p>
                             <p class="card-text"><?php echo $marca; ?></p>
                             <p class="card-text"><?php echo $descripcion; ?></p>
-                            <img src="<?php echo $foto; ?>">    
                             <a href="modificar.php?id=<?php echo $row['id']; ?>">Modificar</a>
                             <a href="eliminar.php?id=<?php echo $row['id']; ?>">Eliminar</a>
                       </div>
